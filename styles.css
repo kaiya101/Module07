@@ -40,6 +40,7 @@ h1 {
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Optional: Adds shadow for clarity */
 }
 
+
 /* Page Background Gradient */
 body {
     background: linear-gradient(135deg, #FF6F61, #82C2A2); /* Lighter red and green gradient */
@@ -47,11 +48,67 @@ body {
     background-position: center;
     font-family: Arial, sans-serif;
 }
+/* About Section with Image Background */
+#about {
+  background: url('https://images.pexels.com/photos/30785759/pexels-photo-30785759.jpeg') no-repeat center center/cover;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 80px 20px;
+  color: dark grey; /* White text only for the About section */
+  text-align: center;
+}
 
+.about-container {
+  background-color: rgba(0, 0, 0, 0.5); /* Black with lowered opacity to make text stand out */
+  padding: 30px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#about h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+/* Menu Styles */
+ul.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.navbar li {
+  margin: 0 20px;
+}
+
+ul.navbar li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black; /* Changed text color to black */
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+ul.navbar li a:hover {
+  color: #FF5733; /* Adds color when hovered */
+  transition: color 0.3s ease;
+}
 
 /* Menu Section Background */
 .menu {
-    background-color: rgba(241, 241, 241, 0.8); /* Slightly transparent white */
+    background-color: rgba(244, 241, 241, 0.8); /* Slightly transparent white */
     padding: 50px;
 }
 
@@ -104,23 +161,6 @@ body {
     padding: 60px 20px;
     text-align: center;
 }
-/* Our Story Section with Background Image */
-#our-story {
-    position: relative;
-    background-image: url('https://images.pexels.com/photos/30785759/pexels-photo-30785759.jpeg');
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Keeps the image centered */
-    height: 500px; /* Adjust the height as needed for your section */
-    color: white; /* Text color to ensure readability */
-    padding: 50px;
-    text-align: center;
-}
-
-#our-story h2, #our-story p {
-    position: relative;
-    z-index: 2; /* Ensures text is on top of the image */
-}
-
 
 /* About Section */
 .about {
@@ -289,4 +329,3 @@ footer {
     margin-top: 40px;
     border-top: 3px solid #C92C2C;
 }
-
