@@ -104,6 +104,23 @@ body {
     padding: 60px 20px;
     text-align: center;
 }
+/* Our Story Section with Background Image */
+#our-story {
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/30785759/pexels-photo-30785759.jpeg');
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Keeps the image centered */
+    height: 500px; /* Adjust the height as needed for your section */
+    color: white; /* Text color to ensure readability */
+    padding: 50px;
+    text-align: center;
+}
+
+#our-story h2, #our-story p {
+    position: relative;
+    z-index: 2; /* Ensures text is on top of the image */
+}
+
 
 /* About Section */
 .about {
