@@ -1,0 +1,275 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;700&display=swap');
+nav ul {
+    display: flex;
+    justify-content: center; /* Centers the list items horizontally */
+    align-items: center; /* Vertically centers the items */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px; /* Adds space between each menu item */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+}
+
+/* Title Styling */
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 90px; /* Increased size to 140px */
+    font-weight: bold;
+    color: #FFFFFF; /* White color for contrast */
+    margin: 0;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Optional: Adds shadow for clarity */
+}
+
+/* Page Background Gradient */
+body {
+    background: linear-gradient(135deg, #FF6F61, #82C2A2); /* Lighter red and green gradient */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Menu Section Background */
+.menu {
+    background-color: rgba(241, 241, 241, 0.8); /* Slightly transparent white */
+    padding: 50px;
+}
+
+/* Updated Menu Images - Bigger & Fit Properly */
+.menu-item img {
+    width: 200px; /* Increased size */
+    height: 200px; /* Ensures even sizing */
+    border-radius: 15px; /* Slightly rounded edges */
+    object-fit: cover; /* Ensures the image fills the space */
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #10362F;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #FF5733;
+    border-radius: 5px;
+}
+
+/* Responsive Navigation - Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 10px;
+    }
+}
+
+/* Sections */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* About Section */
+.about {
+    background-color: #ffffff;
+    border-left: 5px solid #FF5733;
+    border-right: 5px solid #FF5733;
+}
+
+/* Menu Section */
+.menu {
+    background-color: #F1F1F1;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next row */
+    justify-content: space-evenly; /* Even spacing between items */
+    gap: 50px; /* Increased gap between items for more space */
+}
+
+/* Menu Item Styling */
+.menu-item {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center-aligns everything */
+    justify-content: flex-start;
+    margin: 20px auto;
+    background: #FFFFFF; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Keep item size fixed */
+    height: auto; /* Allow height to grow based on content */
+}
+
+/* Menu Item Image */
+.menu-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu Item Text */
+.menu-text {
+    text-align: center;
+    padding-top: 20px; /* Adds space above the text */
+}
+
+/* Price Styling */
+.menu-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FF5733; /* Orange color for price */
+    margin-top: 10px;
+    text-align: center; /* Center-aligns the price */
+}
+/* Ensure that the images fit in a square container */
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background-color: #FF5733;
+    color: white;
+    padding: 16px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #10362F;
+}
+
+/* Contact Section Styling */
+.contact {
+    max-width: 800px; /* Reduced max-width for better content fitting */
+    margin: 30px auto; /* Centers the content with top and bottom margin */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Paragraph Styling */
+.contact p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333; /* Darker text color */
+    margin-bottom: 20px;
+    text-align: justify; /* Justifies text for neat alignment */
+}
+
+/* Headings */
+.contact h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #082F24; /* Dark Green */
+    text-align: center; /* Centers the heading */
+}
+
+/* Address Section Styling */
+.contact address {
+    font-style: normal;
+    font-size: 14px;
+    text-align: center; /* Centers the address text */
+    margin-bottom: 30px;
+}
+
+/* Contact Form Layout */
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr; /* Single-column layout for simplicity */
+    gap: 20px; /* Space between form elements */
+}
+
+/* Input and Textarea Styling */
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+.contact button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #C92C2C; /* Red button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact button:hover {
+    background-color: #A61C1C; /* Slight hover effect */
+}
+
+/* Links Styling */
+.contact a {
+    font-size: 14px;
+    color: #082F24; /* Dark Green */
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}
+
+.contact a:hover {
+    color: #C92C2C; /* Hover color change */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #082F24;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 3px solid #C92C2C;
+}
+
