@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luigi's Italian Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Root Variables */
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;700&display=swap');
+
+        :root {
+            --main-green: #184D47;
+            --main-red: #C73659;
+            --soft-white: #F8F8F8;
+            --dark-gray: #333;
+            --light-gray: #ddd;
+            --gold-accent: #D4AF37;
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--soft-white);
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            text-align: center;
+            font-family: 'Great Vibes', cursive;
+            color: var(--light-green);
+            font-size: 90px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: var(--main-green);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 5%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: var(--gold-accent);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            background: linear-gradient(to right, var(--main-red), var(--main-green));
+        }
+
+        /* About Section */
+        #about {
+            padding: 80px;
+            background: var(--soft-white);
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        /* Menu Section */
+        #menu {
+            background: var(--light-gray);
+            padding: 80px;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .menu-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+            filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+        }
+
+        /* Contact Section */
+        #contact {
+            background: var(--soft-white);
+            padding: 80px;
+        }
+
+        .contact-info {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--main-green);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero {
+                height: 300px;
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Luigi's Italian Restaurant</h1>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <section id="about">
+        <h1>Our Story</h1>
+        <div class="about-content">
+            <p>At Luigi’s, we bring you the flavors of Italy with authentic recipes passed down for generations. Located in the heart of the city, we serve hand-made pasta, wood-fired pizzas, and classic Italian wines. We invite you to experience the true taste of Italy, where every dish is a tribute to generations of tradition. Nestled in the heart of the city, our family-owned restaurant is committed to bringing you an authentic dining experience like no other.
+
+Our chefs, who are deeply passionate about Italian cuisine, craft every dish using age-old recipes passed down from our grandparents, ensuring that each bite is a journey through Italy’s rich culinary history. From our hand-made pasta, expertly rolled and shaped daily, to our mouth-watering wood-fired pizzas, each meal is prepared with love and attention to detail.
+
+At Luigi’s, we believe that food is not just about nourishment but about connection. We offer a carefully curated selection of classic Italian wines to complement every meal, so you can savor the perfect pairing with your favorite dish. Whether you're enjoying a romantic dinner, celebrating with friends, or gathering with family, our warm, welcoming atmosphere makes every visit feel like home.
+
+Come dine with us at Luigi’s Italian Restaurant, where tradition meets flavor in the most delightful way. We promise you a memorable meal, one that’s full of heart, heritage, and the best of Italy.</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h1>Our Menu</h1>
+        <div class="menu-container">
+            <div class="menu-item">
+    <img src="https://images.pexels.com/photos/12918198/pexels-photo-12918198.jpeg" alt="Spaghetti Carbonara">
+    <h3>Spaghetti Carbonara</h3>
+    <p>$15.99</p>
+</div>
+
+<div class="menu-item">
+    <img src="https://images.pexels.com/photos/11230267/pexels-photo-11230267.jpeg" alt="Margherita Pizza">
+    <h3>Margherita Pizza</h3>
+    <p>$12.99</p>
+</div>
+
+<div class="menu-item">
+    <img src="https://images.pexels.com/photos/3510248/pexels-photo-3510248.jpeg" alt="Caprese Salad">
+    <h3>Caprese Salad</h3>
+    <p>$8.99</p>
+</div>
+
+<div class="menu-item">
+    <img src="https://images.pexels.com/photos/2092906/pexels-photo-2092906.jpeg" alt="Shrimp Alfredo">
+    <h3>Shrimp Alfredo</h3>
+    <p>$18.99</p>
+</div>
+
+<div class="menu-item">
+    <img src="https://images.pexels.com/photos/5864352/pexels-photo-5864352.jpeg" alt="Classic Lasagna">
+    <h3>Classic Lasagna</h3>
+    <p>$16.99</p>
+</div>
+
+
+<div class="menu-item">
+    <img src="https://images.pexels.com/photos/26890889/pexels-photo-26890889.jpeg" alt="Tiramisu">
+    <h3>Tiramisu</h3>
+    <p>$7.99</p>
+</div>
+        </div>
+    </section>
+<section class="contact">
+        <p>We’d love to hear from you! Whether you have a question, want to make a reservation, or simply want to share your dining experience with us, we're here to help. Our team is dedicated to making your visit to Luigi’s a memorable one, and we’re just a phone call or email away.</p>
+
+        <h2>Our Location:</h2>
+        <p>Luigi’s Italian Restaurant is located in the heart of the city, making it the perfect destination for a delicious meal with friends, family, or loved ones. We are easily accessible with plenty of parking, and we welcome walk-ins!</p>
+        <address>
+            <p><strong>Address:</strong><br>
+                123 Bella Street,<br>
+                Cityname, State, Zip Code
+            </p>
+        </address>
+
+        <h2>Hours of Operation:</h2>
+        <ul>
+            <li><strong>Monday - Thursday:</strong> 11:00 AM - 9:00 PM</li>
+            <li><strong>Friday - Saturday:</strong> 11:00 AM - 10:00 PM</li>
+            <li><strong>Sunday:</strong> 12:00 PM - 8:00 PM</li>
+        </ul>
+
+        <h2>Reservations:</h2>
+        <p>We recommend making a reservation, especially during our busy hours or weekends. You can reserve a table online by clicking the link below, or simply give us a call. Our friendly staff is ready to assist you.</p>
+        <a href="reservation.html" class="reservation-link">Make a Reservation</a>
+
+        <h2>Give Us a Call:</h2>
+        <p>We’re always happy to answer any questions you may have, whether it’s about our menu, booking a special event, or accommodating dietary preferences. Call us during business hours to speak directly with a member of our team.</p>
+        <p><strong>Phone:</strong> <a href="tel:+11234567890">(123) 456-7890</a></p>
+
+        <h2>Send Us an Email:</h2>
+        <p>For general inquiries, event bookings, or to send us feedback, feel free to reach out via email. We value your input and will get back to you as soon as possible!</p>
+        <p><strong>Email:</strong> <a href="mailto:info@luigisitalian.com">info@luigisitalian.com</a></p>
+
+        <h2>Follow Us:</h2>
+        <p>Stay connected with Luigi’s for the latest updates, specials, and events by following us on social media. We love sharing behind-the-scenes glimpses, upcoming promotions, and of course, mouthwatering photos of our delicious dishes.</p>
+        <ul>
+            <li><a href="#">Instagram: @LuigisItalian</a></li>
+            <li><a href="#">Facebook: Luigi’s Italian Restaurant</a></li>
+            <li><a href="#">Twitter: @LuigisRestaurant</a></li>
+        </ul>
+
+        <h2>We Can’t Wait to Serve You!</h2>
+        <p>Thank you for choosing Luigi’s Italian Restaurant. Whether you're here to enjoy an intimate meal or celebrate a special occasion, we’re excited to welcome you with open arms and authentic Italian flavors. We look forward to hearing from you and seeing you soon!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Luigi's Italian Restaurant. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
